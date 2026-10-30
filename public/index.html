@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-atmosphere="grounded">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f3ec">
+  <meta name="description" content="Small practices for attention, discernment, connection, embodiment, and creativity. A space to practice being human in the age of AI, by Alive Systems Lab.">
+  <title>Alive Practice — A little room to be human</title>
+  <link rel="icon" type="image/svg+xml" href="/mark.svg">
+  <script src="/boot.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient-field" aria-hidden="true"></div>
+  <header class="site-header shell">
+    <a class="brand" href="#home" aria-label="Alive Practice home"><img src="/mark.svg" width="39" height="39" alt=""><span class="brand-name">alive practice<span class="brand-parent">by Alive Systems Lab</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home" data-nav="practice">Practice</a>
+      <a href="#journal" data-nav="journal">Journal<span class="journal-dot" hidden></span></a>
+      <a href="#book" data-nav="book">The book</a>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-button" id="sound-toggle" aria-label="Turn on soft ambient sound" aria-pressed="false" title="Ambient sound"></button>
+      <button class="icon-button" id="appearance-toggle" aria-label="Open appearance settings" aria-haspopup="dialog" title="Appearance and atmosphere"></button>
+    </div>
+  </header>
+  <main id="main" class="shell" tabindex="-1"></main>
+  <footer class="site-footer shell"><span>A question. A reflection. A way to live it.</span><button class="text-button" data-action="privacy">Your data, your space <span aria-hidden="true">↗</span></button></footer>
+  <dialog id="appearance-dialog" class="settings-dialog" aria-labelledby="appearance-title"></dialog>
+  <dialog id="data-dialog" class="content-dialog" aria-labelledby="data-title"></dialog>
+  <dialog id="entry-dialog" class="content-dialog entry-dialog" aria-labelledby="entry-title"></dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript shell">Alive Practice needs JavaScript to run its guided exercises and save your journal in this browser. Please enable JavaScript to begin.</div></noscript>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

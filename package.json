@@ -1,0 +1,14 @@
+{
+  "name": "alive-practice",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A space to practice being human, by Alive Systems Lab.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check public/app.js && node --check public/content.js && node --check public/storage.js && node --check public/boot.js"
+  },
+  "engines": { "node": ">=22" }
+}
